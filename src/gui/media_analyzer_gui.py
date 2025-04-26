@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 class MediaAnalyzerGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("English Media Content Analyzer")
+        self.root.title("UNICC Audio MCZ")
         self.root.geometry("1200x900")
         
         # 添加取消分析标志
@@ -49,12 +49,12 @@ class MediaAnalyzerGUI:
         title_frame = ttk.Frame(self.main_frame)
         title_frame.grid(row=0, column=0, columnspan=3, pady=10)
         
-        title_label = ttk.Label(title_frame, text="English Media Content Analyzer", 
+        title_label = ttk.Label(title_frame, text="UNICC Audio MCZ", 
                                font=('Helvetica', 20, 'bold'))
         title_label.pack()
         
         desc_label = ttk.Label(title_frame, 
-                              text="Analyze English media content for quality and compliance",
+                              text="Professional Audio Content Analysis System",
                               font=('Helvetica', 12))
         desc_label.pack()
         

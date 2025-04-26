@@ -7,6 +7,7 @@ def main():
     try:
         root = tk.Tk()
         app = MediaAnalyzerGUI(root)
+        root.title("UNICC Audio MCZ")
         root.mainloop()
     except Exception as e:
         logging.critical(f"Program startup failed: {str(e)}")
