@@ -14,6 +14,15 @@ import os
 from config import load_api_config
 
 logger = logging.getLogger(__name__)
+# 关键词列表：移民领域中可能包含偏见或歧视的语言
+
+IMMIGRATION\_BIAS\_KEYWORDS = \[
+"deportation", "illegal alien", "go back to your country", "they don't belong here",
+"anchor baby", "invasion", "drain our resources", "taking our jobs", "flooding the border",
+"criminal immigrants", "foreign threat", "stealing benefits", "build the wall",
+"overrun by immigrants", "national security risk", "mass migration crisis", "no assimilation",
+"unvetted migrants", "open border disaster", "burden on taxpayers"
+]
 
 class IflytekAPI:
     def __init__(self):
